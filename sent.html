@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sent
+
+        </title>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta charset="utf-8">
+        <script src = "https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/style.css">
+       
+    </head>
+
+
+    <body>
+        <nav class = "navbar">
+                <span class = "open-slide">
+                   <a href = "#" onclick="openSlideMenu()">
+                      <svg width = "30" height = "30">
+                         <path d= "M0,5 30, 5" stroke= "#fff"
+                         stroke-width="5"/>
+                         <path d="M0,14 30,14" stroke= "#fff"
+                         stroke-width="5"/>
+                         <path d="M0,23 30, 23" stroke="#fff"
+                         stroke-width="5"/>
+                      </svg>
+                   </a>
+               </span>
+                             <ul class = "navbar-nav">
+                                
+                          <li> <a href = "inbox.html">Home</a></li>
+                          <li> <a href="index.html">Logout</a></li>
+                          
+                             </ul>
+      
+             </nav>  
+
+             <div id="side-menu" class="side-nav">
+                    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                    <a href="inbox.html">Inbox</a>
+                     <a href="admin.html">Admin </a>
+                     <a href="create.html">Create</a>
+                    <a href="sent.html" >Sent</a>
+                    <a href="drafts.html">Drafts</a>
+                 </div>
+          
+                 <div id="main">
+                        <h1>Welcome!</h1>
+                        <h2 class="lead-title">Sent Messages</h2>
+                        <div class="timeline">
+                           <div class="container-chat">
+                              <div class="top">
+                                 <span class="title">Olga Kolyenko</span>
+                                 <span class="time-right">9:00 30 Oct 2019</span>
+                              </div>
+                              <p class="lead">Application for appointment</p>
+                              <p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+                                natoque penatibus et magnis dis parturient montes, 
+                                nascetur ridiculus mus.</p>
+                                    <div class="bottom-button">
+                                    <a href="view.html" type="submit" class="viewbtn">VIEW</a>
+                                    <a type="submit" class="deletebtn">CANCEL</a>
+                              
+                           </div>
+
+                           </div>
+                 </div>
+
+
+
+
+
+                 <script src="./javascript/script.js"></script>
+
+
+                 <footer class="footer">
+                  <p>Copyright (c) 2019 <a href="/"><strong>EPIC Mail</strong></a> All Rights Reserved.</p>
+                </footer>             
+    </body>
+
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Admin
+
+        </title>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta charset="utf-8">
+        <script src = "https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/style.css">
+       
+    </head>
+
+    <body>
+            <nav class = "navbar">
+                    <span class = "open-slide">
+                       <a href = "#" onclick="openSlideMenu()">
+                          <svg width = "30" height = "30">
+                             <path d= "M0,5 30, 5" stroke= "#fff"
+                             stroke-width="5"/>
+                             <path d="M0,14 30,14" stroke= "#fff"
+                             stroke-width="5"/>
+                             <path d="M0,23 30, 23" stroke="#fff"
+                             stroke-width="5"/>
+                          </svg>
+                       </a>
+                   </span>
+                                 <ul class = "navbar-nav">
+                                    
+                              <li> <a href = "inbox.html">Home</a></li>
+                              <li> <a href="index.html">Logout</a></li>
+                              
+                                 </ul>
+          
+                 </nav>  
+
+                 <div id="side-menu" class="side-nav">
+                        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                        <a href="inbox.html">Inbox</a>
+                         <a href="admin.html">Admin </a>
+                         <a href="create.html">Create</a>
+                        <a href="sent.html" >Sent</a>
+                        <a href="drafts.html">Drafts</a>
+                     </div>
+              
+                     <div id="main">
+
+                        <h2> Add a Friend!</h2>
+                         
+                         <table>
+                             <tr>
+                                 <td>
+                                     <form class="group-form" onsubmit ="event.preventDefault(); onFormSubmit();" autocomplete="off" >
+                                         <div>
+                                             <label>Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                                             <input type="alphabet" name="urName" id="name">
+                                         </div>
+                                         
+                                         <div>
+                                                <label>Email</label>
+                                                <input type="alphabet" name="urEmail" id="email">
+                                            </div>
+                                            <div class= "form-action-buttons">
+                                                <input type="submit" value="Submit">
+
+                                            </div>
+                                      </form>
+                                        
+
+                                 </td>
+                                 <td>
+                                     <table class="list"  id="groupMembers" >
+                                         <thead >
+                                             <tr>
+                                                <th class="background" >Name</th>
+                                                <th class = "background">Email</th> 
+                                                
+                                             </tr>
+                                         </thead>
+                                         <tbody class="position">
+
+                                         </tbody>
+                                     </table>
+                                 </td>
+                                 
+                                
+                             </tr>
+                         </table>
+          
+
+
+                         </div>
+     
+
+
+
+                        
+                      
+
+                         <footer class="footer">
+                            <p>Copyright (c) 2019 <a href="/"><strong>EPIC Mail</strong></a> All Rights Reserved.</p>
+                          </footer>                    
+
+
+
+                         <script src="./javascript/script.js"></script>
+
+    </body>
+</html>

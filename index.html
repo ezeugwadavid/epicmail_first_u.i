@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        EPIC MAIL
+
+    </title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <main>
+        <div class="login">
+
+            <p class="epic"><strong>EPIC | Mail</strong>
+                <br>
+                <br> A simple web app that helps people exchange messages/information over the internet. </p>
+
+            <div class="login-header">
+                <h1>Login</h1>
+            </div>
+
+            <form name="myForm" action="inbox.html" onsubmit="return validateForm()" method="post">
+
+                <div class="container">
+                    <label for="email"><b>Enter Email</b></label>
+                    <input type="text" placeholder="e.g test@epic-mail.com" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <span class="psw">Forgot <a href="reset-password.html">password?</a></span>
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+
+                </div>
+
+            </form>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright (c) 2019 <a href="/"><strong>EPIC Mail</strong></a> All Rights Reserved.</p>
+    </footer>
+
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
